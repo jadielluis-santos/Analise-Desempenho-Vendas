@@ -70,8 +70,21 @@ Todas as regiões superaram a meta de receita consolidada (Meta Total: R\$ 1.94M
 Com este dataset consolidado, a próxima fase do projeto envolve:
 
 1.  **Dashboard Executivo (BI):** Criação de um dashboard interativo (Power BI/Looker Studio) para acompanhar os KPIs de Receita, Margem, Top Produtos e Atingimento de Metas por Região em tempo real.
-2.  **Previsão de Vendas:** Aplicação do modelo de séries temporais (Prophet) para prever a receita dos próximos 3 a 6 meses.
+2.  **Previsão de Vendas:** Aplicação do modelo de séries temporais (Prophet) para prever a receita dos próximos 3 a 6 meses.### 4. Projeção de Vendas (Insights Avançados - ML)
+
+Para atender à demanda por previsões, aplicamos uma Regressão Linear Simples aos dados de receita mensal (Jan-Dez 2024).
+
+| Mês (2025) | Receita Prevista (R$) |
+| :--- | :--- |
+| **Janeiro** | R$ 985.107,09 |
+| **Fevereiro** | R$ 981.369,20 |
+| **Março** | R$ 977.631,31 |
+
+**Conclusão do ML:** O modelo projeta uma estabilidade no patamar de R$ 980 mil/mês no início de 2025, sugerindo que a equipe comercial precisará de ações estratégicas (e não apenas do impulso sazonal) para ultrapassar a marca de R$ 1 milhão.
+
 
 ***
 
 *Para mais detalhes técnicos, consulte os scripts na pasta `scripts/`.*
+
+
