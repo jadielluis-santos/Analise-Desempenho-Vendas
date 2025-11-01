@@ -70,6 +70,16 @@ Todas as regiões superaram a meta de receita consolidada (Meta Total: R\$ 1.94M
 Com este dataset consolidado, a próxima fase do projeto envolve:
 
 1.  **Dashboard Executivo (BI):** Criação de um dashboard interativo (Power BI/Looker Studio) para acompanhar os KPIs de Receita, Margem, Top Produtos e Atingimento de Metas por Região em tempo real.
+
+   ## 📊 VISUALIZAÇÃO DO DASHBOARD EXECUTIVO
+
+O Dashboard interativo do Power BI foi publicado na Web, permitindo a exploração dinâmica dos KPIs, Sazonalidade e Ranking Regional.
+
+Acesse o **Dashboard Interativo** para explorar os resultados ao vivo:
+
+[ACESSE O DASHBOARD PUBLICADO AQUI](https://app.powerbi.com/view?r=eyJrIjoiNGJjMGM5NzktZjhlYy00MTY1LWJkOTYtM2RkYzM2ZjQyNzVlIiwidCI6ImIwZTczMzVmLWZkMWYtNDZhZC05OGM3LTU1ZTZlNGUyMjJlYSJ9)
+
+
 2.  **Previsão de Vendas:** Aplicação do modelo de séries temporais (Prophet) para prever a receita dos próximos 3 a 6 meses.### 4. Projeção de Vendas (Insights Avançados - ML)
 
 Para atender à demanda por previsões, aplicamos uma Regressão Linear Simples aos dados de receita mensal (Jan-Dez 2024).
