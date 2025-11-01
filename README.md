@@ -1,11 +1,11 @@
-# 📈 Análise de Desempenho de Vendas 2024 - ComercioTech
+# Análise de Desempenho de Vendas 2024 - ComercioTech
 
 ## Introdução
 Este projeto é uma Análise de Dados e Business Intelligence (BI) completa, realizada para a varejista nacional ComercioTech, especializada em produtos eletrônicos e de informática. O objetivo é fornecer uma visão executiva do desempenho de vendas e lucratividade em 2024, identificando tendências, anomalias e oportunidades.
 
 **Papel:** Analista de Dados / Cientista de Dados Júnior.
 
-## 🔑 Principais Resultados Executivos (KPIs)
+## Principais Resultados Executivos (KPIs)
 
 | Métrica | Valor | Insights Chave |
 | :--- | :--- | :--- |
@@ -17,7 +17,7 @@ Este projeto é uma Análise de Dados e Business Intelligence (BI) completa, rea
 | **Melhor Região** | **Sul (141.44% Atingimento)** | Líder absoluta em superação de metas de receita. |
 | **Alerta (Sazonalidade)**| **Dezembro** | Mês com a menor margem bruta, atípico para o varejo. |
 
-## 🛠️ Stack Tecnológica
+## Stack Tecnológica
 
 | Área | Ferramentas/Bibliotecas |
 | :--- | :--- |
@@ -27,7 +27,7 @@ Este projeto é uma Análise de Dados e Business Intelligence (BI) completa, rea
 | **BI (Recomendado)** | Power BI / Looker Studio |
 | **Previsão (Próxima Fase)** | Prophet / Scikit-learn |
 
-## ⚙️ Estrutura do Projeto e Pipeline
+## Estrutura do Projeto e Pipeline
 
 O projeto segue um pipeline modularizado e reprodutível:
 
@@ -36,7 +36,7 @@ O projeto segue um pipeline modularizado e reprodutível:
 2.  **Feature Engineering:** Cálculo de `Receita Líquida`, `Custo Total` e `Margem Bruta Total` por transação.
 3.  **Integração (Joins):** Unificação das 4 bases por `id_produto`, `id_cliente` e `mês/região`.
 
-## 🧠 Insights Detalhados da Análise Exploratória (EDA)
+## Insights Detalhados da Análise Exploratória (EDA)
 
 ### 1. Análise de Lucratividade
 
@@ -65,7 +65,7 @@ Todas as regiões superaram a meta de receita consolidada (Meta Total: R\$ 1.94M
 * **Público-Alvo:** A maior fatia da receita vem da faixa etária **26-35 anos** e o público **Feminino** gera a maior receita total.
 * **Sazonalidade:** Vendas atingiram picos em **Maio e Agosto**. Dezembro é o mês com a menor margem absoluta (R\$ 149K), o que é uma anomalia para o setor e deve ser investigada.
 
-## 📊 Próximos Passos (BI e Previsão)
+## Próximos Passos (BI e Previsão)
 
 Com este dataset consolidado, a próxima fase do projeto envolve:
 
