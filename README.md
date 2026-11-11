@@ -45,7 +45,7 @@ dados_processados/   dataset_final.csv
 2. **Feature engineering:** `receita_liquida`, `custo_total` e `margem_bruta_total` por venda.
 3. **Integração:** junção de vendas com produtos (`id_produto`), clientes (`id_cliente`) e metas (mês).
 
-**Limitação conhecida:** o mês da venda é gerado em inglês (`Feb`, `Apr`...) e a base de metas usa português (`Fev`, `Abr`...). Por isso, 626 vendas de 7 meses (fev, abr, mai, ago, set, out e dez) ficam sem meta no `dataset_final.csv`. Os números de meta deste README foram calculados direto da base de metas, mês a mês.
+**Correção aplicada:** na primeira versão, o mês da venda saía em inglês (`Feb`, `Apr`...) e a base de metas usa português (`Fev`, `Abr`...), o que deixava 626 vendas de 7 meses sem meta. O ETL agora gera o mês em português e o `dataset_final.csv` foi gerado de novo: todas as 1.000 vendas têm meta.
 
 ## Insights da análise exploratória
 
@@ -108,9 +108,8 @@ O dashboard interativo em Power BI está publicado na web, com KPIs, sazonalidad
 
 ## Próximos passos
 
-1. Corrigir a junção de metas no ETL (padronizar o nome do mês).
-2. Investigar as 361 vendas abaixo do custo e separar erro de cadastro de prejuízo real.
-3. Testar previsão com sazonalidade (Prophet).
+1. Investigar as 361 vendas abaixo do custo e separar erro de cadastro de prejuízo real.
+2. Testar previsão com sazonalidade (Prophet).
 
 ---
 
