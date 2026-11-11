@@ -46,7 +46,11 @@ df_vendas['custo_total'] = df_vendas['quantidade'] * df_vendas['custo_unitario']
 df_vendas['margem_bruta_total'] = df_vendas['receita_liquida'] - df_vendas['custo_total']
 
 # Criação de Chave Temporal (Mês e Ano/Mês)
-df_vendas['mes_nome'] = df_vendas['data_venda'].dt.strftime('%b').str.title() 
+# Nome do mês em português, no mesmo padrão da base de metas (Jan, Fev, Mar...).
+# strftime('%b') depende do idioma do sistema e gerava 'Feb', 'Apr'..., o que deixava 7 meses sem meta.
+MESES_PT = {1: 'Jan', 2: 'Fev', 3: 'Mar', 4: 'Abr', 5: 'Mai', 6: 'Jun',
+            7: 'Jul', 8: 'Ago', 9: 'Set', 10: 'Out', 11: 'Nov', 12: 'Dez'}
+df_vendas['mes_nome'] = df_vendas['data_venda'].dt.month.map(MESES_PT)
 df_vendas['ano_mes'] = df_vendas['data_venda'].dt.to_period('M').dt.to_timestamp()
 
 
